@@ -547,7 +547,23 @@ a.navitem, div.navitem{
 	background-color:white;
 	width:50px;
 }
+
+#resourcelist{
+	display:inline-block;
+	position:fixed;
+	top:36px;
+	left:0;
+	background-color:white;
+	width:70px;
+}
+
 .scratchsize{
+	border:1px solid #ccc;
+	border-top:none;
+	line-height:30px;
+}
+
+.resource{
 	border:1px solid #ccc;
 	border-top:none;
 	line-height:30px;

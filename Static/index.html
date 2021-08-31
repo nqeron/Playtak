@@ -90,8 +90,14 @@
 				<div class="scratchsize" onclick="scratchbutton(8)">8x8</div>
 			</div></button
 			><button class="navitem" onclick="$('#loadmodal').modal('show')" data-hover="Load a game state from a PTN or TPS file">Load</button
+			><button class="navitem" id="resourcesbutton" style="position: relative;top: 0;left: 0;" onclick="toggleresources()" onblur="$('#resourcelist').hide()" data-hover="Resources for Tak">Resources <span class="caret"></span><div id="resourcelist" style="display:none;">
+				<div class="resource" onclick="window.open('https://reddit.com/r/Tak','_blank')">Subreddit</div>
+				<div class="resource" onclick="window.open('https://discord.gg/2xEt42X','_blank')">Discord</div>
+				<div class="resource" onclick="window.open('https://ustak.org/','_blank')">US Tak</div>
+			</div></button
 			><div class="navitem" style="min-width:78px;" data-hover="Number of players currently logged in">Online <span class="badge" id="onlineplayersbadge">0</span></div
 			>
+			
 		</nav>
 		<div id="floating">
 			<div id="notation-toggle-text" class="toggle-text" data-hover="Click to show/hide notation" onclick="adjustsidemenu('toggle',null)">

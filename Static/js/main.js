@@ -466,6 +466,12 @@ function togglescratch(){
 	var rect=document.getElementById("scratchbutton").getBoundingClientRect()
 	$("#scratchlist").css("top",(rect.top+36)+"px").css("left",rect.left+"px").toggle()
 }
+
+function toggleresources(){
+	var rect=document.getElementById("resourcesbutton").getBoundingClientRect()
+	$("#resourcelist").css("top",(rect.top+36)+"px").css("left", rect.left+"px").toggle()
+}
+
 function scratchbutton(size) {
 	if(board.observing) {server.send("Unobserve " + board.gameno)}
 	if(board.scratch || board.observing) {
