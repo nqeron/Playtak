@@ -102,6 +102,15 @@ class GamesController
 			querys[querys.count] = "1461430800000"
 		end
 
+		if params.has_key?("time") && params["time"].length > 0
+			queryf[queryf.count] = "and timertime = ?"
+			querys[querys.count] = params["time"]
+		end
+
+		if params.has_key?("increment") && params["increment"].length > 0
+			queryf[queryf.count] = "and timerinc = ?"
+			querys[querys.count] = params[increment]
+
 
 		queryfinalf=''
 		queryf.each do |i| queryfinalf += i + join end
